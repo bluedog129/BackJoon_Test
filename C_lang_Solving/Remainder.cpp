@@ -2,27 +2,22 @@
 
 int main() {
 	int num[10] = { 0 };
-	int Cnt = 0;
-	int rmd = 0;
-	int rmdArr[10] = { 0 };
-	for (int z = 0; z < 3; z++) {
-		// 전체 3번 반복
-		for (int n = 0; n < 10; n++) {
-			//10개의 정수를 입력받음
-			scanf_s("%d", &num[n]);
-		}
-		for (int i = 0; i < sizeof(num) / sizeof(int); i++) {
-			for (int j = 0; j < sizeof(num) / sizeof(int); j++) {
-				// rmd = num[]에 42를 나눈 나머지값
-				rmdArr[j] = num[j] % 42;
-				// 
-				rmd = rmdArr[j];
+	int cnt = 0;
 
-				if (rmdArr[i] == rmd) {
+	for (int i = 0; i < 10; i++) {
+		scanf_s("%d", &num[i]);
+		num[i] = num[i] % 42;
+	}
 
-				}
+	for (int j = 0; j < 42; j++) {
+		for (int k = 0; k < 10; k++) {
+			if (j == num[k]) {
+				cnt++;
+				break;
 			}
-			printf("%d", Cnt);
 		}
 	}
+
+	printf("%d", cnt);
+	return 0;
 }

@@ -39,5 +39,8 @@
     <ClCompile Include="OverEv.cpp">
       <Filter>소스 파일\Arr</Filter>
     </ClCompile>
+    <ClCompile Include="sequence.cpp">
+      <Filter>소스 파일\Arr</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

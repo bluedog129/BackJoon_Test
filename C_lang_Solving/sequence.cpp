@@ -7,10 +7,10 @@
 int main() {
 	int N = 0;
 	int X = 0;
-	int A[] = { 0 };
 
-	scanf_s("%d", &N);
-	scanf_s("%d", &X);
+	scanf_s("%d %d", &N, &X);
+
+	int A[1000] = { 0 };
 
 	for (int i = 0; i < N; i++) {
 		scanf_s("%d", &A[i]);
@@ -18,7 +18,7 @@ int main() {
 
 	for (int i = 0; i < N; i++) {
 		if (A[i] < X) {
-			printf("%d", X);
+			printf("%d ", A[i]);
 		}
 	}
 }

@@ -8,10 +8,10 @@ int main()
     int min = 1000000;
     int max = -1000000;
 
-    scanf("%d", &n);
+    scanf_s("%d", &n);
 
     for (int i = 0; i < n; i++) {
-        scanf("%d", &num[i]);
+        scanf_s("%d", &num[i]);
     }
 
     for (int i = 0; i < n; i++) {

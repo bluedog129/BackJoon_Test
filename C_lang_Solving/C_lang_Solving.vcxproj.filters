@@ -42,5 +42,8 @@
     <ClCompile Include="Sequence.cpp">
       <Filter>소스 파일\Arr</Filter>
     </ClCompile>
+    <ClCompile Include="ThreeInt.cpp">
+      <Filter>소스 파일\Arr</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

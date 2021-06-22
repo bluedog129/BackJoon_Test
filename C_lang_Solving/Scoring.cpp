@@ -5,7 +5,7 @@ int main()
 {
 	int A = 0, B = 0, C = 0;
 	int result = 0;
-	int arr[8] = { 0 };
+	int arr[9] = { 0 }; // result의 각 자릿수에 들어갈 수를 넣을 변수
 	int score[10] = { 0 }; // 0~9 까지
 
 	//150, 266, 427 입력
@@ -13,53 +13,27 @@ int main()
 	scanf_s("%d", &B);
 	scanf_s("%d", &C);
 
-	result = A * B * C;
 	//result = 17037300
-
-	//arr[]에 맞는 수가 들어가게끔
-	//result의 각 자리수를 어떻게 구분하는지?
-	//result의 각 자리수는 pow(10, i) % 10 으로 구분한다.
-	//그리고 구분한 값을 자리에 맞게 arr[]에 넣는다.
-	for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
-		arr[i] = (int)(result / pow(10, 7 - i)) % 10;
+	result = A * B * C;
+	
+	// arr[]에 해당하는 값을 넣는다.
+	for (int i = 0; i < 9; i++) {
+		// pow(a,b) == a의 b제곱
+		arr[i] = (int)(result / pow(10, 8 - i)) % 10;
 	}
 
-	for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
-		if (arr[i] == 1) {
-			score[1] += 1;
-		}
-		if (arr[i] == 2) {
-			score[2] += 1;
-		}
-		if (arr[i] == 3) {
-			score[3] += 1;
-		}
-		if (arr[i] == 4) {
-			score[4] += 1;
-		}
-		if (arr[i] == 5) {
-			score[5] += 1;
-		}
-		if (arr[i] == 6) {
-			score[6] += 1;
-		}
-		if (arr[i] == 7) {
-			score[7] += 1;
-		}
-		if (arr[i] == 8) {
-			score[8] += 1;
-		}
-		if (arr[i] == 9) {
-			score[9] += 1;
-		}
-		if (arr[i] == 0) {
-			score[0] += 1;
+	// arr[]의 각 자리수의 값 만큼 score에 저장
+	for (int i = 0; i < 10; i++) {
+		for (int j = 1; j < 10; j++) {
+			if (arr[j] == i) {
+				score[i]++;
+			}
 		}
 	}
 
-	for (int i = 0; i < sizeof(score) / sizeof(int); i++) {
-		printf("%d", score[i]); printf("\n");
+	for (int i = 0; i < 10; i++) {
+		printf("%d \n", score[i]);
 	}
-
+	
 	return 0;
 }

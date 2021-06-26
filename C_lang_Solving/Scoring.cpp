@@ -16,15 +16,23 @@ int main()
 	//result = 17037300
 	result = A * B * C;
 	
+	//result 자릿수를 count변수에 저장
+	int num = result;
+	int count = 0;
+	do {
+		num = (int)(num / 10);
+		count++;
+	} while (num > 0);
+
 	// arr[]에 해당하는 값을 넣는다.
-	for (int i = 0; i < 9; i++) {
-		// pow(a,b) == a의 b제곱
-		arr[i] = (int)(result / pow(10, 8 - i)) % 10;
+	for (int i = 0; i < count; i++) {
+		arr[i] = (int)(result) % 10;
+		result = result / 10;
 	}
 
 	// arr[]의 각 자리수의 값 만큼 score에 저장
 	for (int i = 0; i < 10; i++) {
-		for (int j = 1; j < 10; j++) {
+		for (int j = 0; j < count; j++) {
 			if (arr[j] == i) {
 				score[i]++;
 			}

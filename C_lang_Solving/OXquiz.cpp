@@ -2,30 +2,29 @@
 #include <string.h>
 
 int main() {
-	int input = 0;
-	char OX[81] = { 0 };
-	int size = strlen(OX);
+    int input = 0;
+    char OX[80];
 
+    scanf("%d", &input);
 
-	scanf_s("%d", &input);
+    for (int i = 0; i < input; i++) {
+        scanf("%s", OX);
 
-	for (int i = 0; i < input; i++) {
-		scanf_s("%s", OX, sizeof(OX));
+        int count = 0;
+        int sum = 0;
+        for (int j = 0; j < strlen(OX); j++) {
 
-		int count = 0;
-		int sum = 0;
+            if (OX[j] == 'O') {
+                count++;
+                sum += count;
+            }
+            else {
+                count = 0;
+            }
 
-		for (int j = 0; j < size; j++) {
-			if (OX[i] == 'O') {
-				count++;
-			}
-			else if (OX[i] == 'X') {
-				count = 0;
-			}
-			sum += count;
-		}
-		printf("%d\n", sum);
-	}
+        }
+        printf("%d\n", sum);
+    }
 
-	return 0;
+    return 0;
 }

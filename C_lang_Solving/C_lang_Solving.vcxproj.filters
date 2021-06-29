@@ -48,5 +48,8 @@
     <ClCompile Include="Sum.cpp">
       <Filter>소스 파일\Arr</Filter>
     </ClCompile>
+    <ClCompile Include="a+b-4.cpp">
+      <Filter>소스 파일\Arr</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

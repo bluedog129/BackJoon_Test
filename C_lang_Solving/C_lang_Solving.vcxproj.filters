@@ -16,6 +16,12 @@
     <Filter Include="소스 파일\Arr">
       <UniqueIdentifier>{ef83ce8b-ceb1-40b2-b7b9-6febdb70c5ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Stack">
+      <UniqueIdentifier>{265a9937-7dbd-4efa-87c2-32e734ff4ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Practice">
+      <UniqueIdentifier>{12a881cd-b447-4ae5-91da-bfeecd912085}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="arrEverage.cpp">
@@ -50,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="a+b-4.cpp">
       <Filter>소스 파일\Arr</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="sizeof.cpp">
+      <Filter>소스 파일\Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>소스 파일\Practice</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Practice">
       <UniqueIdentifier>{12a881cd-b447-4ae5-91da-bfeecd912085}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\bronze5">
+      <UniqueIdentifier>{3d1fc21a-4d0c-4781-8341-e70ef1aa6094}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="arrEverage.cpp">
@@ -68,6 +71,15 @@
     </ClCompile>
     <ClCompile Include="strlen.cpp">
       <Filter>소스 파일\Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="symbolic_constant.cpp">
+      <Filter>소스 파일\Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="division.cpp">
+      <Filter>소스 파일\bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="verification.cpp">
+      <Filter>소스 파일\bronze5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -81,5 +81,11 @@
     <ClCompile Include="verification.cpp">
       <Filter>소스 파일\bronze5</Filter>
     </ClCompile>
+    <ClCompile Include="obvious_constants.cpp">
+      <Filter>소스 파일\Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="flip_over.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,9 +1,11 @@
 #include <iostream>
 #include <stack>
 #include <string>
+
 using namespace std;
+
 struct Stack {
-     int data[10000];
+    int data[10000];
     int size;
     Stack() {
         size = 0;
@@ -38,6 +40,7 @@ struct Stack {
         }
     }
 };
+
 int main() {
     int n;
     cin >> n;

@@ -22,8 +22,11 @@
     <Filter Include="소스 파일\Practice">
       <UniqueIdentifier>{12a881cd-b447-4ae5-91da-bfeecd912085}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\bronze5">
+    <Filter Include="소스 파일\bronze">
       <UniqueIdentifier>{3d1fc21a-4d0c-4781-8341-e70ef1aa6094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Queue">
+      <UniqueIdentifier>{6a2e2989-2a49-423b-9455-c5145a95a60c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,10 +79,10 @@
       <Filter>소스 파일\Practice</Filter>
     </ClCompile>
     <ClCompile Include="division.cpp">
-      <Filter>소스 파일\bronze5</Filter>
+      <Filter>소스 파일\bronze</Filter>
     </ClCompile>
     <ClCompile Include="verification.cpp">
-      <Filter>소스 파일\bronze5</Filter>
+      <Filter>소스 파일\bronze</Filter>
     </ClCompile>
     <ClCompile Include="obvious_constants.cpp">
       <Filter>소스 파일\Practice</Filter>
@@ -91,7 +94,13 @@
       <Filter>소스 파일\Stack</Filter>
     </ClCompile>
     <ClCompile Include="triangle.cpp">
-      <Filter>소스 파일\bronze5</Filter>
+      <Filter>소스 파일\bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>소스 파일\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="card2.cpp">
+      <Filter>소스 파일\bronze</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\Queue">
       <UniqueIdentifier>{6a2e2989-2a49-423b-9455-c5145a95a60c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\binary tree">
+      <UniqueIdentifier>{7c33a9ca-0e5e-45fd-a8d5-2ff07a844eb6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="arrEverage.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="card2.cpp">
       <Filter>소스 파일\bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="binary tree.cpp">
+      <Filter>소스 파일\binary tree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

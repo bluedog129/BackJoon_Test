@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\binary tree">
       <UniqueIdentifier>{7c33a9ca-0e5e-45fd-a8d5-2ff07a844eb6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\silver">
+      <UniqueIdentifier>{7c425a3f-d4c1-4e63-bb7d-c1ff7851d5a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="arrEverage.cpp">
@@ -107,6 +110,12 @@
     </ClCompile>
     <ClCompile Include="binary tree.cpp">
       <Filter>소스 파일\binary tree</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupSentence.cpp">
+      <Filter>소스 파일\silver</Filter>
+    </ClCompile>
+    <ClCompile Include="15596.cpp">
+      <Filter>소스 파일\bronze</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

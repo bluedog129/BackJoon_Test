@@ -1,20 +1,11 @@
-#include <iostream>
 #include <vector>
 
 using namespace std;
 
 long long sum(vector<int> &a) {
-
-
-	for (int i = 0; i < 10; i++) {
-
+	long long result = 0;
+	for (int i = 0; i < a.size(); i++) {
+		result += a[i];
 	}
-}
-
-
-
-
-int main() {
-	int a[] = { 0 };
-
+	return result;
 }

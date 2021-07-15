@@ -117,5 +117,8 @@
     <ClCompile Include="15596.cpp">
       <Filter>소스 파일\bronze</Filter>
     </ClCompile>
+    <ClCompile Include="2609.cpp">
+      <Filter>소스 파일\silver</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

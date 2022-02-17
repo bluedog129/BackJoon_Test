@@ -8,12 +8,10 @@ int main()
 	char c;
 	int rows, cols;
 
-	while (1) {
-		scanf("%c %d %d", &c, &rows, &cols);
+	while ((c = getchar()) != '\n') {
+		scanf("%d %d", &rows, &cols);
+		while (getchar() != '\n') continue;
 		display(c, rows, cols);
-		if (c == '\n') {
-			break;
-		}
 	}
 
 	return 0;

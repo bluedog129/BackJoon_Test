@@ -7,7 +7,7 @@ string valid(string s) {
     // 스택의 크기
     int cnt = 0;
     for (int i = 0; i < s.size(); i++) {
-        // 여는 괄호는 push
+        // 여는 괄호는 push.
         if (s[i] == '(') {
             cnt += 1;
         }
@@ -35,7 +35,7 @@ int main() {
     while (t--) {
         string s;
         cin >> s;
-        cout << valid(s) << '\n';
+        cout << valid(s);
     }
     return 0;
 }
